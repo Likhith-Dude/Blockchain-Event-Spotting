@@ -78,14 +78,27 @@ python main.py
 
 ## ML Results
 
+Evaluated on **257,673 records** from the [UNSW-NB15 dataset](https://www.kaggle.com/datasets/mrwellsdavid/unsw-nb15) (80/20 train-test split, `random_state=42`):
+
 | Model | Accuracy |
 |-------|----------|
-| Random Forest | ~99% |
-| Decision Tree | ~95% |
-| Gradient Boosting | ~98% |
-| Naive Bayes | ~75% |
+| **Random Forest** | **98.36%** |
+| Gradient Boosting | 96.55% |
+| Decision Tree | 89.42% |
+| Naive Bayes | 82.35% |
 
-> Exact results depend on the dataset used.
+**Random Forest classification report (best model):**
+
+```
+              precision    recall  f1-score   support
+
+      Normal       0.97      0.98      0.98     18675
+      Attack       0.99      0.98      0.99     32860
+
+    accuracy                           0.98     51535
+   macro avg       0.98      0.98      0.98     51535
+weighted avg       0.98      0.98      0.98     51535
+```
 
 ---
 
