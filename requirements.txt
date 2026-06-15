@@ -1,0 +1,8 @@
+tinyec
+pycryptodome
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+easygui
